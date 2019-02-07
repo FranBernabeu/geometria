@@ -7,7 +7,7 @@ public class Circulo_FBA extends FiguraGeometrica_FBA {
 	public Circulo_FBA(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
-		Math.abs(r);
+		radio= (double) Math.abs(r);
 	}
 
 	@Override

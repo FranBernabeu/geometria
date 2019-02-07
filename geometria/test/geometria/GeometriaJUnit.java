@@ -13,16 +13,42 @@ public class GeometriaJUnit {
 	private double res;
 
 	@Test
-	public void testarea() {
-		Circulo_FBA cir = new Circulo_FBA (-3, null);
+	public void testarea1() {
+		Circulo_FBA cir = new Circulo_FBA (7, null);
 		res= cir.area();
-		assertEquals(45.0,res);
+		assertEquals(153.9384,res,0);
 	}
 	@Test
-	public void testperimetro() {
+	public void testperimetro1() {
+		Circulo_FBA cir= new Circulo_FBA (7,null);
+		res=cir.perimetro();
+		assertEquals(43.9824,res,0);
+
+	}
+	@Test
+	public void testarea2() {
+		Circulo_FBA cir = new Circulo_FBA (0, null);
+		res= cir.area();
+		assertEquals(0,res,0);
+	}
+	@Test
+	public void testperimetro2() {
+		Circulo_FBA cir= new Circulo_FBA (0,null);
+		res=cir.perimetro();
+		assertEquals(0,res,0);
+
+	}
+	@Test
+	public void testarea3() {
+		Circulo_FBA cir = new Circulo_FBA (-3, null);
+		res= cir.area();
+		assertEquals(28.2744,res,0);
+	}
+	@Test
+	public void testperimetro3() {
 		Circulo_FBA cir= new Circulo_FBA (-3,null);
 		res=cir.perimetro();
-		assertEquals(20,res);
+		assertEquals(18.8496,res,0);
 
 	}
 }
